@@ -1,19 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Legend Of The Chambered</title>
-    <script src="https://cjrtnc.leaningtech.com/3.1/cj3loader.js"></script>
+    <title>CheerpJ Java App Example</title>
+    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
   </head>
   <body>
-    <center>
-      <script>
-        (async function () {
-          await cheerpjInit();
-          cheerpjCreateDisplay(800, 600);
-          await cheerpjRunJar("/app/chambered.jar");
-        })();
-      </script>
-    </center>
+    <script>
+      (async function () {
+        await cheerpjInit();
+        cheerpjCreateDisplay(800, 600);
+        await cheerpjRunJar("/app/chambered.jar");
+      })();
+    </script>
   </body>
 </html>
