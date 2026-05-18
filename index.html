@@ -2,19 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>CheerpJ Java App Example</title>
-    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+    <title>CheerpJ Applet Example</title>
+    <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
   </head>
   <body>
+    <applet
+      archive="chambered.jar"
+      code="com.mojang.chambered.ChamberedApplet"
+      height="240"
+      width="320"
+    ></applet>
     <script>
-      (async function () {
-        await cheerpjInit();
-        cheerpjCreateDisplay(800, 600);
-        await cheerpjRunMain(
-                  "com.mojang.chambered.Chambered",
-                  "/app/chambered.jar"
-                );
-      })();
+      cheerpjInit();
     </script>
   </body>
 </html>
